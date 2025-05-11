@@ -17,7 +17,7 @@ void main() async {
     translations: AppTranslations(),
     locale: const Locale('en', 'US'),
     fallbackLocale: const Locale('en', 'US'),
-    initialRoute: AppRoutes.home,
+    initialRoute: AppRoutes.login,
     getPages: AppPages.routes,
     debugShowCheckedModeBanner: false,
   ));
