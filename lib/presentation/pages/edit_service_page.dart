@@ -92,7 +92,7 @@ class _EditServicePageState extends State<EditServicePage> {
   }
 
   Widget _buildCategoryDropdown() {
-    const categories = ['Animal', 'Plants', 'Human'];
+    const categories = ['Cleaning', 'Repair', 'Car Wash', 'Catering'];
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: DropdownButtonFormField<String>(

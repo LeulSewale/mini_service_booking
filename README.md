@@ -8,7 +8,7 @@ A clean, responsive, and modern **Flutter frontend** for a Mini Service Booking 
 
 | Home Page                             | Service Details                         | Edit Service                          |
 |--------------------------------------|-----------------------------------------|---------------------------------------|
-| ![Home](screenshots/home.png)        | ![Details](screenshots/details.png)     | ![Edit](screenshots/edit.png)         |
+| ![Home](screenshots/home.png)        | ![Details](screenshots/additems.jpg)     | ![Edit](screenshots/edit.png)         |
 
 > *(Include `.png` files inside `/screenshots` folder or replace with GIFs or video links.)*
 

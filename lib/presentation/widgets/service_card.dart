@@ -30,16 +30,18 @@ class ServiceCard extends StatelessWidget {
             child: SizedBox(
               width: 60,
               height: 60,
-              child: service.imageUrl.isURL
+              child: (service.imageUrl.isNotEmpty &&
+                      (service.imageUrl.startsWith('http') ||
+                          service.imageUrl.startsWith('https')))
                   ? Image.network(
                       service.imageUrl,
                       fit: BoxFit.cover,
-                      errorBuilder: (context, error, stackTrace) =>
-                          const Icon(Icons.broken_image, size: 40),
+                      errorBuilder: (context, error, stackTrace) {
+                        return const Icon(Icons.broken_image, size: 40);
+                      },
                       loadingBuilder: (context, child, loadingProgress) {
                         if (loadingProgress == null) return child;
-                        return const Center(
-                            child: CircularProgressIndicator(strokeWidth: 2));
+                        return const Center(child: CircularProgressIndicator());
                       },
                     )
                   : const Icon(Icons.image_not_supported, size: 40),

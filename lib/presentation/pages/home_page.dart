@@ -16,8 +16,6 @@ class _HomePageState extends State<HomePage> {
 
   final List<String> categories = [
     'All',
-    'Haircut',
-    'Nails',
     'Cleaning',
     'Repair',
     'Car Wash',

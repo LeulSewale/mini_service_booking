@@ -102,8 +102,6 @@ class _AddServicePageState extends State<AddServicePage> {
 
   Widget _buildCategoryDropdown() {
     const categories = [
-      'Haircut',
-      'Nails',
       'Cleaning',
       'Repair',
       'Car Wash',
