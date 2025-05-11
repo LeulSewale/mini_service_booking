@@ -56,13 +56,15 @@ This app serves as a **frontend-only** mini booking platform where users can:
 2. **Install dependencies**
  ```bash
    flutter pub get
+```
 3. **Run the app**
  ```bash
    flutter run
+```
 4. **Update API base URL (if needed)**
     Inside /lib/core/constants/api_constants.dart
      ```bash
-    const baseUrl = 'https://681d1447f74de1d219aebf17.mockapi.io/api/v1/';
+    const baseUrl = 'https://681d1447f74de1d219aebf17.mockapi.io/api/v1/';```
 
 ## 📦 Folder Structure
   ```bash
@@ -84,7 +86,7 @@ lib/
 ├── routes/               # App routes
 ├── main.dart             # Entry point
 
-
+```
 
 ## ✅ Implemented Features
  GetX for state management and routing
