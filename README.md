@@ -1,4 +1,4 @@
-# 🛠️ Mini Service Booking App (Frontend Only)
+# 🛠️ Mini Service Booking App
 
 A clean, responsive, and modern **Flutter frontend** for a Mini Service Booking App. It allows users to browse, search, filter, add, edit, and delete services using a public mock REST API. Built with **GetX**, **Clean Architecture**, and offline support.
 
