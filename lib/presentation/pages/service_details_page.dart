@@ -82,17 +82,19 @@ class ServiceDetailsPage extends StatelessWidget {
 
               const SizedBox(height: 20),
 
-              ElevatedButton.icon(
+                ElevatedButton.icon(
                 onPressed: () => Get.toNamed('/edit-service/${service.id}'),
                 icon: const Icon(Icons.edit),
-                label: Text('editService'.tr),
+                label: Text('editService'.tr,
+                  style: const TextStyle(color: Colors.white)),
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(double.infinity, 48),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(10),
                   ),
+                  backgroundColor: Colors.green, // Added green color
                 ),
-              )
+                )
             ],
           ),
         ),

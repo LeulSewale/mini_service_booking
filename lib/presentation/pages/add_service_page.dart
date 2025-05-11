@@ -101,12 +101,7 @@ class _AddServicePageState extends State<AddServicePage> {
   }
 
   Widget _buildCategoryDropdown() {
-    const categories = [
-      'Cleaning',
-      'Repair',
-      'Car Wash',
-      'Catering'
-    ];
+    const categories = ['Cleaning', 'Repair', 'Car Wash', 'Catering'];
 
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
@@ -208,10 +203,13 @@ class _AddServicePageState extends State<AddServicePage> {
                 ElevatedButton.icon(
                   onPressed: isFormValid ? _addService : null,
                   icon: const Icon(Icons.add),
-                  label: Text('add_service'.tr),
+                  label: Text(
+                    'add_service'.tr,
+                    style: TextStyle(color: Colors.white),
+                  ),
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16),
-                    backgroundColor: Colors.blueAccent,
+                    backgroundColor: Colors.green,
                     disabledBackgroundColor: Colors.grey,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12)),

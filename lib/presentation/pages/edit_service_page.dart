@@ -220,7 +220,10 @@ class _EditServicePageState extends State<EditServicePage> {
                 ElevatedButton.icon(
                   onPressed: isFormValid ? _saveChanges : null,
                   icon: const Icon(Icons.save),
-                  label: Text('save'.tr),
+                  label: Text(
+                    'save'.tr,
+                    style: TextStyle(color: Colors.white),
+                  ),
                   style: ElevatedButton.styleFrom(
                     padding: const EdgeInsets.symmetric(vertical: 16),
                     backgroundColor: Colors.green,

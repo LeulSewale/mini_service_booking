@@ -14,7 +14,10 @@ A clean, responsive, and modern **Flutter frontend** for a Mini Service Booking 
 |--------------------------------------|-----------------------------------------|---------------------------------------|
 | ![Home](screenshots/additems.jpg)        | ![Details](screenshots/local.jpg)     | ![Edit](screenshots/login.jpg)         |
 
-> *(Include `.png` files inside `/screenshots` folder or replace with GIFs or video links.)*
+>
+## 🎥 Demo
+
+![Demo](screenshots/video.gif)
 
 ---
 
@@ -51,32 +54,36 @@ This app serves as a **frontend-only** mini booking platform where users can:
    git clone https://github.com/yourusername/mini_service_booking.git
    cd mini_service_booking
 2. **Install dependencies**
+ ```bash
    flutter pub get
 3. **Run the app**
+ ```bash
    flutter run
 4. **Update API base URL (if needed)**
     Inside /lib/core/constants/api_constants.dart
+     ```bash
     const baseUrl = 'https://681d1447f74de1d219aebf17.mockapi.io/api/v1/';
 
 ## 📦 Folder Structure
+  ```bash
 lib/
 ├── core/
-│   ├── bindings/              # App-wide bindings for DI
-│   ├── constants/             # API constants, app-wide strings
-│   ├── utils/                 # 
+│   ├── bindings/         # App-wide bindings for dependency injection
+│   ├── constants/        # API constants, app-wide strings
+│   ├── utils/            # Helper utilities
 ├── data/
-│   ├── models/                # Data models (ServiceModel, etc.)
-│   ├── providers/             # API services (ServiceApi)
-│   ├── services/
+│   ├── models/           # Data models (ServiceModel, etc.)
+│   ├── providers/        # API services (ServiceApi)
+│   ├── services/         # Core services (e.g., network, storage)
 ├── l10n/
-│   ├── translations/ 
+│   ├── translations/     # i18n GetX translation files
 ├── presentation/
-│   ├── controllers/           # GetX controllers
-│   ├── pages/                 # Screens (HomePage, DetailPage, etc.)
-│   ├── widgets/               # Reusable UI components (ServiceCard,etc.)
-├── routes/
-│   
-├── main.dart                  # Entry point
+│   ├── controllers/      # GetX controllers
+│   ├── pages/            # Screens (HomePage, DetailPage, etc.)
+│   ├── widgets/          # Reusable UI components (ServiceCard, etc.)
+├── routes/               # App routes
+├── main.dart             # Entry point
+
 
 
 ## ✅ Implemented Features
